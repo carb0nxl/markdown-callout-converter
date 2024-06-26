@@ -1,6 +1,6 @@
 # Markdown Callout Converter
 
-A Python script to convert MS Docs call-out (aka admonitions or asides) syntax to MkDocs Material style callouts.
+A Python script to convert Obsidian / MSDocs call-out (aka admonitions or asides) syntax to MkDocs Material style callouts.
 
 ## Purpose
 
@@ -40,7 +40,7 @@ I keep my "live" Obsidian notebook in one location and copy/paste all the conten
 
 3. **Run the script**:
    ```bash
-   python preprocess_markdown.py
+   python md-preprocessor.py
    ```
 
 4. **Build your MkDocs site**:
