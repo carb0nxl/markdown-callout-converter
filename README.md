@@ -1,11 +1,30 @@
 # Markdown Callout Converter
-A Python script to convert MS Docs callout syntax to MkDocs Material style callouts.
 
-This repository contains a Python script to convert MS Docs style callouts to MkDocs Material style callouts in Markdown files.
+A Python script to convert MS Docs call-out (aka admonitions or asides) syntax to MkDocs Material style callouts.
+
+## Purpose
+
+I write my notes natively in Obsidian but I wanted an effortless way to host some of my markdown notes in a wiki format, which led me to use MkDocs with the Material theme. However, MkDocs uses a different syntax for admonitions:
+
+MkDocs syntax:
+```markdown
+!!! note
+    This is a note.
+```
+
+Obsidian/MS Docs syntax:
+```markdown
+> [!NOTE]
+> This is a note.
+```
+
+To maintain the visual aesthetic of callouts in Obsidian, I created a Python script to parse and convert all instances of callouts to the MkDocs format within the MkDocs project folder.
+
+I keep my "live" Obsidian notebook in one location and copy/paste all the contents to the folder where my MkDocs wiki lives, and then I run the script.
 
 ## Features
 
-- Converts MS Docs callout syntax (e.g., `[!NOTE]`) to MkDocs Material style (`!!! note`)
+- Converts Obsidian/MS Docs callout syntax (e.g., `[!NOTE]`) to MkDocs Material style (`!!! note`)
 - Supports various callout types such as note, warning, info, and more
 
 ## Usage
@@ -38,11 +57,3 @@ This repository contains a Python script to convert MS Docs style callouts to Mk
 ## Contributing
 
 Contributions are welcome! Please submit a pull request or open an issue to discuss any changes.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Author
-
-Created by [Your Name](https://github.com/YOUR_USERNAME).
